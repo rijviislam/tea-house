@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tea House</title>
+    <html data-theme="light"></html>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/output.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
     />
     <style>
@@ -16,5 +22,103 @@
       }
     </style>
   </head>
-  <body></body>
+  <body>
+    <header class="container mx-auto">
+      <div class="hero min-h-screen">
+        <div class="hero-content flex flex-col lg:flex-row">
+          <div>
+            <h1 class="text-7xl font-extrabold text-[#1C1C1C]">
+              It's good <br />
+              tea time at The <br />
+              Tea House
+            </h1>
+            <p class="py-6 text-lg">
+              Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+              Your Taste Buds.
+            </p>
+            <button class="btn btn-primary">Explore More</button>
+          </div>
+          <div>
+            <img src="../images/banner.png" class="max-w-sm rounded-lg" />
+            <div
+              class="-mt-16 flex gap-3 items-center drop-shadow-lg bg-white p-5 w-60 rounded-2xl"
+            >
+              <i class="bx bxs-star text-3xl text-[#FFF082]"></i>
+              <div>
+                <h3 class="text-3xl">5.00</h3>
+                <p class="text-base text-[#777]">Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container mx-auto">
+      <section class="text-center my-36">
+        <h2 class="text-5xl font-extrabold text-[#1C1C1C]">
+          Our Featured Products
+        </h2>
+        <p class="text-lg mt-5 mb-10 lg:max-w-4xl mx-auto">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even slightly believable.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+          <div
+            class="card p-8 bg-gradient-to-r from-[#F4F4F4 ] to-[#f4f4f400] shadow-xl"
+          >
+            <figure class="px-10 pt-10">
+              <img src="../images/tea-1.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="text-2xl font-extrabold text-[#1C1C1C]">Milk Tea</h2>
+              <p class="text-center mt-2">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+          </div>
+          <div
+            class="card p-8 bg-gradient-to-r from-[#F4F4F4 ] to-[#f4f4f400] shadow-xl"
+          >
+            <figure class="px-10 pt-10">
+              <img src="../images/tea-2.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="text-2xl font-extrabold text-[#1C1C1C]">Milk Tea</h2>
+              <p class="text-center mt-2">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+          </div>
+          <div
+            class="card p-8 bg-gradient-to-r from-[#F4F4F4 ] to-[#f4f4f400] shadow-xl"
+          >
+            <figure class="px-10 pt-10">
+              <img src="../images/tea-3.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="text-2xl font-extrabold text-[#1C1C1C]">Milk Tea</h2>
+              <p class="text-center mt-2">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+          </div>
+          <div
+            class="card p-8 bg-gradient-to-r from-[#F4F4F4 ] to-[#f4f4f400] shadow-xl"
+          >
+            <figure class="px-10 pt-10">
+              <img src="../images/tea-4.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="text-2xl font-extrabold text-[#1C1C1C]">Milk Tea</h2>
+              <p class="text-center mt-2">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
