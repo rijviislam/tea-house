@@ -1296,6 +1296,15 @@ html {
   line-height: 1.25rem;
 }
 
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
 .card.image-full :where(figure) {
   overflow: hidden;
   border-radius: inherit;
@@ -1562,10 +1571,18 @@ html {
   line-height: 1.25rem;
 }
 
+.card-compact .card-title {
+  margin-bottom: 0.25rem;
+}
+
 .card-normal .card-body {
   padding: var(--padding-card, 2rem);
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.card-normal .card-title {
+  margin-bottom: 0.75rem;
 }
 
 .join.join-vertical > :where(*:not(:first-child)) {
@@ -1602,6 +1619,34 @@ html {
 
 .top-32 {
   top: 8rem;
+}
+
+.left-24 {
+  left: 6rem;
+}
+
+.top-96 {
+  top: 24rem;
+}
+
+.top-28 {
+  top: 7rem;
+}
+
+.top-36 {
+  top: 9rem;
+}
+
+.top-40 {
+  top: 10rem;
+}
+
+.top-44 {
+  top: 11rem;
+}
+
+.top-48 {
+  top: 12rem;
 }
 
 .z-10 {
@@ -1667,6 +1712,10 @@ html {
   margin-top: 1.5rem;
 }
 
+.-mt-80 {
+  margin-top: -20rem;
+}
+
 .flex {
   display: flex;
 }
@@ -1689,6 +1738,14 @@ html {
 
 .h-16 {
   height: 4rem;
+}
+
+.h-\[190px\] {
+  height: 190px;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .min-h-screen {
@@ -1727,6 +1784,22 @@ html {
   width: 4rem;
 }
 
+.w-\[364px\] {
+  width: 364px;
+}
+
+.w-\[328px\] {
+  width: 328px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-\[320px\] {
+  width: 320px;
+}
+
 .max-w-6xl {
   max-width: 72rem;
 }
@@ -1749,6 +1822,34 @@ html {
 
 .flex-col {
   flex-direction: column;
+}
+
+.place-content-center {
+  place-content: center;
+}
+
+.place-content-around {
+  place-content: space-around;
+}
+
+.place-content-stretch {
+  place-content: stretch;
+}
+
+.place-items-center {
+  place-items: center;
+}
+
+.content-center {
+  align-content: center;
+}
+
+.content-stretch {
+  align-content: stretch;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-center {
@@ -1946,6 +2047,11 @@ html {
      object-fit: contain;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-5 {
   padding: 1.25rem;
 }
@@ -1956,6 +2062,10 @@ html {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-10 {
@@ -2023,6 +2133,11 @@ html {
   padding-right: 3.5rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .pb-32 {
   padding-bottom: 8rem;
 }
@@ -2057,6 +2172,14 @@ html {
 
 .text-center {
   text-align: center;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .text-2xl {
@@ -2184,6 +2307,10 @@ html {
     width: 433px;
   }
 
+  .lg\:w-\[364px\] {
+    width: 364px;
+  }
+
   .lg\:max-w-4xl {
     max-width: 56rem;
   }
@@ -2194,6 +2321,10 @@ html {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
